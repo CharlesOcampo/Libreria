@@ -1,8 +1,8 @@
-{{foreach productos}}
+{{foreach products}}
   <div>
-    <h3>{{nombre}}</h3>
-    <p>{{precio}}</p>
-    <p>{{cantidad}}</p>
+    <h3>{{namep}}</h3>
+    <p>{{price}}</p>
+    <p>{{quantity}}</p>
     {{if enCarretilla}}
       <a href="/carts/{{id}}/remove">Remove from cart</a
     {{endif enCarretilla}}
@@ -10,4 +10,4 @@
       <a href="/carts/{{id}}/add">Add to cart</a>
     {{endifnot enCarretilla}}
   </div>
-{{endfor productos}}
+{{endfor products}}
